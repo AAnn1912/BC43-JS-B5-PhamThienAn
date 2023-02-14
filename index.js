@@ -118,6 +118,7 @@ document.getElementById("tinh-tien-cap").onclick = function () {
   var maKh = document.getElementById("ma-kh").value;
   var soKenhCC = document.getElementById("so-kenh").value;
   var tongTienCap = "";
+
   switch (loaiKh.value) {
     case "4.5":
       tongTienCap = 4.5 + 20.5 + soKenhCC * 7.5;
@@ -127,7 +128,9 @@ document.getElementById("tinh-tien-cap").onclick = function () {
       }).format(tongTienCap);
       document.getElementById("dap-an-bai-4").innerHTML =
         "Mã Khách Hàng là: " + maKh + ", " + "Tổng tiền cáp là: " + soFormat;
+
       break;
+
     case "15":
       if (soKetNoi.value <= 10) {
         tongTienCap = 15 + 75 + 50 * soKenhCC;
@@ -146,7 +149,9 @@ document.getElementById("tinh-tien-cap").onclick = function () {
         document.getElementById("dap-an-bai-4").innerHTML =
           "Mã Khách Hàng là: " + maKh + ", " + "Tổng tiền cáp là: " + soFormat;
       }
+
       break;
+
     default:
       tongTienCap = "Vui lòng chọn loại Khách Hàng";
       alert(tongTienCap);
