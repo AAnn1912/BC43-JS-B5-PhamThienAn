@@ -1,15 +1,3 @@
-// Layout
-var oPen1 = document.getElementById("close1");
-var oPen2 = document.getElementById("close2");
-
-document.getElementById("bai-1").onclick = function () {
-  oPen1.src = "./img/iconJSB5/edu-open.png";
-};
-
-document.getElementById("bai-2").onclick = function () {
-  oPen2.src = "./img/iconJSB5/elec-open.png";
-};
-
 // Baì tập
 
 // Bài 1
