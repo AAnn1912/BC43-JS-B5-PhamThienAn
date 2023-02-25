@@ -17,6 +17,9 @@ var bai2 = document.getElementById("two");
 var bai3 = document.getElementById("three");
 var bai4 = document.getElementById("four");
 open1.src = bookOpen1;
+bai2.style.display = "none";
+bai3.style.display = "none";
+bai4.style.display = "none";
 // Bài 1
 document.getElementById("bai-1").onclick = function () {
   open1.src = bookOpen1; // Bài 1
